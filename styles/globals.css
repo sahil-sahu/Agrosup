@@ -1,0 +1,50 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: 'GilroyB';
+  src: url('/webFont/Gilroy-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'GilroyXB';
+  src: url('/webFont/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'GilroyM';
+  src: url('/webFont/Gilroy-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+:root {
+  --primary: #8181FF;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 800px) {
+  
+  body{
+    
+    visibility: hidden;
+    
+  }
+}

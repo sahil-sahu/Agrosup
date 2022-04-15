@@ -1,0 +1,26 @@
+
+.hero{
+  max-width: 90rem;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroContainer{
+  padding: 1rem;
+
+}
+
+.heroContainer h1{
+
+  font-family: 'GilroyXB';
+  font-size: 5rem;
+
+}
+.heroContainer p{
+
+  font-family: 'GilroyM';
+  font-size: 1.5rem;
+
+}
