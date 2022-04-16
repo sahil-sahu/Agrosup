@@ -10,23 +10,7 @@ export default function Home() {
           description="Cultivating a farm produce market of no monopoly. We are web 3.0 market for the direct relation of farmers to businesses."
         />
       <main>
-        <Header></Header>
-        <section className={styles.hero}>
-          <div className={styles.heroContainer}>
-            <h1>
-              Cultivating a farm produce market of NO MONOPLOY
-            </h1>
-            <p>
-              We are web 3.0 market for the direct relation of farmers to businesses.
-            </p>
-            <div className={styles.more}>
-              <a href="#">
-                KNOW <br />MORE
-              </a>
-            </div>
-          </div>
-          <div className={styles.heroImg}></div>
-        </section>
+        Authentication Status : 0
       </main> 
     </>
   )
