@@ -46,6 +46,7 @@
     border-radius: 600rem 0 0 600rem;
     padding: 1.5rem 7% !important;
     font-size: 1.2rem;
+    cursor: pointer;
     
 }
 
@@ -57,5 +58,93 @@
     
     padding: 1rem 2%;
     letter-spacing: 3px;
+
+}
+
+.three{
+    display:none;
+}
+
+@media only screen and (max-width: 800px){
+
+    .Nav{
+        height: 17.5%;
+    }
+
+    .brand{ 
+        justify-content: center;
+        font-size: 1.15rem;
+        letter-spacing: 8px;
+    }
+    
+    .brand img{
+        height: 100%;
+        padding: .1rem;
+    }
+    
+    .navitems{
+    
+        list-style: none;
+        display: none;
+        justify-content: end;
+        font-size: 1.1rem;
+        text-align: center;
+        
+    }
+
+    /* .three{display: inline;} */
+
+    .hamburger .line{
+        width: 2rem;
+        height: 3px;
+        background-color: #000;
+        display: block;
+        margin: 8px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .hamburger:hover{
+        cursor: pointer;
+      }
+
+    #hamburger-6.is-active{
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    
+    #hamburger-6.is-active .line:nth-child(2){
+    width: 0px;
+    }
+    
+    #hamburger-6.is-active .line:nth-child(1),
+    #hamburger-6.is-active .line:nth-child(3){
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    }
+    
+    #hamburger-6.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px);
+    -ms-transform: translateY(13px);
+    -o-transform: translateY(13px);
+    transform: translateY(13px);
+    }
+    
+    #hamburger-6.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(90deg);
+    -ms-transform: translateY(-13px) rotate(90deg);
+    -o-transform: translateY(-13px) rotate(90deg);
+    transform: translateY(-13px) rotate(90deg);
+    }  
 
 }

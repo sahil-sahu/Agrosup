@@ -4,11 +4,13 @@
   margin: auto;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  overflow-y: hidden;
 }
 
 .heroContainer{
-  padding: 1rem;
+  padding: 2rem;
+  padding-bottom: 0;
 
 }
 
@@ -24,3 +26,50 @@
   font-size: 1.5rem;
 
 }
+
+.more{
+
+  background-color: var(--primary);
+  padding-top: 2.5%;
+  text-align: center;
+  border-radius: 15% 15% 0 0 ;
+  color: #fff;
+  width: 12rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  font-family: "GilroyXB", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  transform: translateY(45%);
+  margin: 0 10% ;
+  cursor: pointer;
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .heroContainer h1{
+
+    font-size: 2.5rem;
+  
+  }
+  .heroContainer p{
+  
+    font-size: 1.2rem;
+  
+  }
+  
+  .more{
+  
+    letter-spacing: 3px;
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+    transform: translateY(25%);
+    width: 8rem;
+    height: 6rem;
+    margin: 0 10% ;
+  
+  }
+}
+

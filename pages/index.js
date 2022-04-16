@@ -19,6 +19,11 @@ export default function Home() {
             <p>
               We are web 3.0 market for the direct relation of farmers to businesses.
             </p>
+            <div className={styles.more}>
+              <a href="#">
+                KNOW <br />MORE
+              </a>
+            </div>
           </div>
           <div className={styles.heroImg}></div>
         </section>
