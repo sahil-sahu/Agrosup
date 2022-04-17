@@ -51,11 +51,15 @@ export default function Home() {
             <h2>
                 Producers-Farmers
             </h2>
-            <ThemeProvider theme={theme}>
+            <div className={styles.theform}>
+              <div className={styles.farmericon}>
+                <img src="/Farmer.png" alt="" />
+              </div>
+              <ThemeProvider theme={theme}>
                 <Box
                 component="form"
                 sx={{
-                    '& > :not(style)': { m: 1, width: '25ch' },
+                    '& > :not(style)': { m: 1, width: '25ch', maxWidth: '75%' },
                 }}
                 noValidate
                 autoComplete="off" className={styles.form}
@@ -80,15 +84,16 @@ export default function Home() {
                 </FormControl>
                 <TextField id="standard-basic" maxLength="10" label="Phone" type="" variant="standard" />
                 <div className={styles.submitButton}>
-                    <Button variant="contained" className={styles.submit}><ArrowForwardIosIcon /></Button>
+                    <button variant="contained" className={styles.submit}><ArrowForwardIosIcon /></button>
                 </div>
                 </Box>
-            </ThemeProvider>
+              </ThemeProvider>
+            </div>
             <div className={styles.completion}>
                 <div className={styles.progress}>
-                    <div style={{width:`${25}%`}}></div>
+                    <div style={{width:`${40}%`}}></div>
                 </div>
-                <h6>25%</h6>
+                <h6>40%</h6>
             </div>
             
           </div>

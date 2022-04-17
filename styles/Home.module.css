@@ -1,10 +1,7 @@
 .auth{
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-30%);
-  width: 60%;
+  width: 80%;
+  max-width: 40rem;
   height: auto;
   max-width: 40rem;
   padding: 2rem;
@@ -12,7 +9,8 @@
   font-size: 1.25rem;
   text-align: center;
   border-radius: 3rem;
-  box-shadow: inset 0px -10px 6px rgba(89, 89, 89, 0.3), 12px 1.2rem 75px rgba(89, 89, 89, 0.2);
+  margin: 0 auto 5% auto;
+  box-shadow: inset 0px -8px 6px rgba(89, 89, 89, 0.3), 12px 1.2rem 75px rgba(89, 89, 89, 0.2);
 
 }
 
@@ -77,6 +75,29 @@
   border: none;
   transition: ease-in-out .2s;
   color: #fff;
+  cursor: pointer;
+
+}
+
+.theform{
+
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+}
+
+.farmericon{
+
+  float: right;
+  width: 100%;
+  padding: 3%;
+
+}
+
+.farmericon img{
+
+  width: 100%;
 
 }
 
@@ -85,3 +106,21 @@
   font-family: "GilroyM", sans-serif !important;
 
 } */
+
+@media only screen and (max-width: 800px){
+
+  .theform{
+    flex-direction: column;
+  }
+
+  .farmericon{
+
+    float: right;
+    width: 75%;
+    padding: 3%;
+  
+  }
+
+  
+
+}
