@@ -1,16 +1,38 @@
 
 .hero{
-  max-width: 90rem;
-  margin: auto;
+  
   height: 100vh;
-  display: flex;
-  align-items: flex-end;
+  
+  margin: auto;
+  
   overflow-y: hidden;
+  background-image: url("/Vectorseamless.svg");
+  background-position: bottom right;
+  animation-name: waveAction;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 25s;
+  background-size: 250%;
+  background-repeat:repeat-x;
+}
+
+@keyframes waveAction {
+  from {background-position: bottom left;}
+  to {background-position: bottom right;}
 }
 
 .heroContainer{
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  flex-direction: column;
+  max-width: 90rem;
   padding: 2rem;
   padding-bottom: 0;
+  margin: 0 auto;
+  overflow-y: hidden;
+  height: 100%;
 
 }
 
@@ -24,6 +46,7 @@
 
   font-family: 'GilroyM';
   font-size: 1.5rem;
+  color: #5A5A5A;
 
 }
 
@@ -47,7 +70,114 @@
 
 }
 
+.benefits{
+  
+  background-image: url("/Wave3.svg"), linear-gradient(#fff, rgba(0,0,0,.1));
+  background-size: 110%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+}
+
+.benefitContainer{
+
+  max-width: 80rem;
+  margin : auto;
+  padding: 2rem;
+
+}
+
+.benefitContainer h2{
+
+  font-family: 'GilroyB', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+
+}
+.benefitContainer h2 span{
+
+  font-size: 4rem;
+
+}
+
+.benefitCard{
+
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: inset 0px 0px 4px rgba(89, 89, 89, 0.2), 0px 1rem 1rem rgba(89, 89, 89, 0.1);
+  margin: 2rem;
+  font-family: 'GilroyM', sans-serif;
+  background-color: #fff;
+  transition: .2s;
+
+}
+
+.benefitCard:hover, .benefit1{
+
+  background-color: var(--primary);
+  cursor: pointer;
+  color: #fff;
+}
+
+.benefitCard:hover img, .benefitCard:hover ul li::before, .benefit1 img, .benefit1 ul li::before{
+
+ filter: brightness(100);
+
+}
+
+
+.benefitCard ul{
+  list-style : none;
+}
+.benefitCard ul li::before{
+
+  position: absolute;
+  left: 4rem;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("/radio.svg") 0 0 no-repeat;
+
+}
+
+.benefitTitle{
+
+  font-size: 1.75rem;
+  font-family: 'GilroyB';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.benefitTitle img{
+
+  width: 4rem;
+  padding: .5rem;
+
+}
+
+.benefitTitle span{
+
+  font-size: 2.2rem;
+
+}
+
+.benefitCard ul li{
+
+  margin: 1.25rem;
+  font-size: 1.1rem;
+  text-overflow: clip;
+  
+}
+
 @media only screen and (max-width: 800px) {
+
+  .hero{
+
+    background-size: 750%;
+
+  }
   
   .heroContainer h1{
 
@@ -70,6 +200,12 @@
     height: 6rem;
     margin: 0 10% ;
   
+  }
+
+  .benefits{
+
+    background-size: 400%;
+
   }
 }
 
