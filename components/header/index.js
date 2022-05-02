@@ -1,5 +1,5 @@
 import styles from './main.module.css';
-import Link from 'next/link'
+import Link from 'next/link';
 function Header() {
 
     return(
@@ -14,7 +14,7 @@ function Header() {
                     <li><a href="">PEOPLE</a></li>
                     <li><a href="">CONTACT</a></li>
                     <Link href="https://sso.agrosup.ga/login">
-                        <li className={styles.start}><a>GET <br /> STARTED</a></li>
+                        <li className={styles.start}><a href="https://sso.agrosup.ga/login" >GET <br /> STARTED</a></li>
                     </Link>
                 </ul>
                 <div className={`${styles.three} ${styles.col}`}>
