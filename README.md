@@ -1,6 +1,6 @@
 ## This is AgroSup
 
-Web3 based marketplace and Supplychain system for farm produce.
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
